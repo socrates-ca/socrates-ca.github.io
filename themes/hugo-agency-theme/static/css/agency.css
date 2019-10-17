@@ -177,13 +177,16 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #fed136;
+    background-color: rgba(34, 34, 34, 0.5);
+    border-radius: 5px;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: white;
+    background-color: rgba(34, 34, 34, 0.5);
 }
 
 .navbar-default .navbar-collapse {
@@ -258,6 +261,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+        background-color: transparent;
     }
 }
 
