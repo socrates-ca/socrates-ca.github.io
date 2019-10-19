@@ -88,7 +88,7 @@ googleAnalytics = "UA-149838891-1"
 			[[params.services.row.list]]
 				icon = "fa-plus-circle"
 				title = "It's about Fun"
-				description = "We will not only spend the days together but also the nights. And – believe it or not – programmers are a great company! There will be be lots of opportunities to spend your time. Starting with simple chilling over hiking and biking, playing games, hanging around, talking, laughing, …"
+				description = "We will not only spend the days together but also the nights. And – believe it or not – programmers are a great company! There will be be lots of opportunities to spend your time. Starting with simple chilling over snowshoeing, playing games, hanging around, talking, laughing, …"
 
 	# Portfolio section
 	[params.portfolio]
@@ -135,11 +135,20 @@ googleAnalytics = "UA-149838891-1"
 		# All team member's pictures are stored under 'static/img/team'.
 		# Replace them with your own too.
 		[[params.team.members]]
+			img = "SoCraTes_CA.png"
+			name = "SoCraTes CA"
+			position = "Canada"
+			social = [
+				["fa-twitter", "https://twitter.com/SoCraTes_CA"],
+				["fa-link", "https://socrates-ca.github.io"]
+			]
+
+		[[params.team.members]]
 			img = "SoCraTes_FR.png"
 			name = "SoCraTes FR"
 			position = "France"
 			social = [
-				["fa-twitter", "https://twitter.com/#socratesfr"],
+				["fa-twitter", "https://twitter.com/SoCraTes_FR"],
 				["fa-link", "https://socrates-fr.github.io"]
 			]
 
@@ -284,7 +293,7 @@ googleAnalytics = "UA-149838891-1"
 		title = "Registration"
 		subtitle  = ""
 		buttontext = ""
-		explains = "Registration TBA."
+		explains = "Registration TBA." #is now open! "
 		#explains = "Pre-registration is now open. If the number of participants exceeds 50, a random draw will be held on the end of May."
 
 	# Footer section
@@ -294,4 +303,4 @@ googleAnalytics = "UA-149838891-1"
 
 		[[params.footer.social]]
 			icon = "fa-twitter"
-			link = "https://twitter.com/swcraftmontreal/"
+			link = "https://twitter.com/SoCraTes_CA/"
