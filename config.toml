@@ -78,7 +78,7 @@ googleAnalytics = "UA-149838891-1"
 			[[params.services.row.list]]
 				icon = "fa-users"
 				title = "It's about People"
-				description = "Everyone who is concerned with coding, testing, code quality and craft."
+				description = "Everyone who is concerned with coding, testing, code quality and craft. Expect creative discussions and rich learnings between passionate people."
 
 			[[params.services.row.list]]
 				icon = "fa-play-circle"
@@ -88,7 +88,7 @@ googleAnalytics = "UA-149838891-1"
 			[[params.services.row.list]]
 				icon = "fa-plus-circle"
 				title = "It's about Fun"
-				description = "We will not only spend the days together but also the nights. And – believe it or not – programmers are a great company! There will be be lots of opportunities to spend your time. Starting with simple chilling over snowshoeing, playing games, hanging around, talking, laughing, …"
+				description = "We will not only spend the days together but also the nights. And – believe it or not – programmers are a great company! There will be be lots of opportunities to spend your time. Starting with simple chilling over snowshoeing, playing games, hanging around…"
 
 	# Portfolio section
 	[params.portfolio]
