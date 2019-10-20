@@ -1,0 +1,306 @@
+# Site settings
+baseurl = "https://socrates-ca.github.io/"
+languageCode = "en-ca"
+title = "SoCraTes-CA"
+theme = "hugo-agency-theme"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-149838891-1"
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) or
+	# most longer texts.
+	#
+	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# To provide some metadata for search engines feel free to add a few
+	# information about you and your website.
+	name = "SoCraTes CAnada"
+	description = "International Conference for Software Craft and Testing"
+
+	# Since this template is static, the contact form uses www.formspree.io as a
+	# proxy. The form makes a POST request to their servers to send the actual
+	# email. Visitors can send up to a 1000 emails each month for free.
+	#
+	# What you need to do for the setup?
+	#
+	# - set your email address under 'email' below
+	# - upload the generated site to your server
+	# - send a dummy email yourself to confirm your account
+	# - click the confirm link in the email from www.formspree.io
+	# - you're done. Happy mailing!
+	email = "test@gmail.com"
+	gforms = "153aAnAaKBsFqusTKXvyZjpgHbKx4LrhPVtn8VubkNKM"
+
+	# Navigation
+	[params.navigation]
+		brand = "SoCraTes CAnada 2020"
+		services = "What it is about?"
+		portfolio = "Information"
+		about = "History"
+		team = "Family"
+		contact = "Registration"
+		sponsors = "Sponsors"
+
+	# Add custom links. Those can be pre- and postpended to the default menu above.
+	# Use the weight attribute to order your custom links. Uncomment the example
+	# below and replace the values with your own.
+
+	# prepended links
+	#[[menu.prepend]]
+	#    url = "http://gohugo.io"
+	#    name = "Hugo"
+	#    weight = 10
+
+	# postpended links
+	[[menu.postpend]]
+		url = "https://github.com/SoCraTes-CA/socrates-ca.github.io/wiki"
+		name = "Wiki"
+
+	# Hero section
+	[params.hero]
+		# To change the background image of the hero, replace 'header-bg.png' in
+		# the 'static/img' folder.
+		title = "March 13-15th, 2020.<br/>International Conference for Software Craft and Testing."
+		subtitle = "SoCraTes CAnada 2020"
+		buttontext = "Tell me more"
+
+	# Services section
+	[params.services]
+		enable = true
+		title = "What it is about?"
+		subtitle = "This event is about the sustainable creation of useful software in a responsible way."
+
+		[[params.services.row]]
+
+			[[params.services.row.list]]
+				icon = "fa-users"
+				title = "It's about People"
+				description = "Everyone who is concerned with coding, testing, code quality and craft. Expect creative discussions and rich learnings between passionate people."
+
+			[[params.services.row.list]]
+				icon = "fa-play-circle"
+				title = "It's about Action"
+				description = "The event will be run as a non-profit, low-cost event. It will be much like a retreat. We will be there for 48 hours to collaborate and share ideas."
+
+			[[params.services.row.list]]
+				icon = "fa-plus-circle"
+				title = "It's about Fun"
+				description = "We will not only spend the days together but also the nights. And – believe it or not – programmers are a great company! There will be be lots of opportunities to spend your time. Starting with simple chilling over snowshoeing, playing games, hanging around…"
+
+	# Portfolio section
+	[params.portfolio]
+		enable = true
+		# All projects defined in their own files. You can find example projects
+		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+		# at the root of this Hugo site.
+		# For more informtion take a look at the README.
+		title = "Information"
+		subtitle = "Useful details about the event. You might also be interested in reading [our wiki](https://github.com/socrates-ca/socrates-ca.github.io/wiki)"
+
+		[params.portfolio.modal]
+			client = "Client"
+			date = "Date"
+			category = "Category"
+			buttontext = "Close"
+
+
+	# About section
+	[params.about]
+		enable = true
+		title = "History"
+		subtitle = "Previous and next editions."
+		endpoint = "Be part<br>of the<br>event!"
+
+		# The events will be listed from the top to the bottom.
+		# All images are stored under 'static/img/about'.
+		# Replace them with your own.
+
+		[[params.about.events]]
+			img = "5.jpg"
+			date = "March, 2020"
+			title = "First edition"
+			description = "Coming soon!"
+
+	# Team section
+	[params.team]
+		enable = true
+		title = "SoCraTes-CA is a part of a big family."
+		subtitle = "The first “Software Craftsmanship and Testing (un)conference” took place a few years ago in Germany and is organised every year since 2011."
+		description = "Other conferences have emerged in many different countries."
+
+
+		# All team member's pictures are stored under 'static/img/team'.
+		# Replace them with your own too.
+		[[params.team.members]]
+			img = "SoCraTes_CA.png"
+			name = "SoCraTes CA"
+			position = "Canada"
+			social = [
+				["fa-twitter", "https://twitter.com/SoCraTes_CA"],
+				["fa-link", "https://socrates-ca.github.io"]
+			]
+
+		[[params.team.members]]
+			img = "SoCraTes_FR.png"
+			name = "SoCraTes FR"
+			position = "France"
+			social = [
+				["fa-twitter", "https://twitter.com/SoCraTes_FR"],
+				["fa-link", "https://socrates-fr.github.io"]
+			]
+
+		[[params.team.members]]
+			img = "SoCraTes.png"
+			name = "SoCraTes"
+			position = "Germany"
+			social = [
+				["fa-twitter", "https://twitter.com/socrates_2016"],
+				["fa-link", "https://www.socrates-conference.de"]
+			]
+
+		[[params.team.members]]
+			img = "SoCraTes_UK.png"
+			name = "SoCraTes UK"
+			position = "United Kingdom"
+			social = [
+				["fa-twitter", "https://twitter.com/SoCraTes_UK"],
+				["fa-link", "http://socratesuk.org"]
+			]
+
+		[[params.team.members]]
+			img = "SoCraTes_ES.png"
+			name = "SoCraTes Canaries"
+			position = "Spain"
+			social = [
+				["fa-twitter", "https://twitter.com/#socracan16"],
+				["fa-link", "http://www.socrates-conference.es"]
+			]
+
+		[[params.team.members]]
+			img = "SoCraTesDay_CH.jpeg"
+			name = "SoCraTes Day Switzerland"
+			position = "Switzerland"
+			social = [
+				["fa-twitter", "https://twitter.com/SoCraTesDay_CH"],
+				["fa-link", "http://socrates-day.ch"]
+			]
+
+		[[params.team.members]]
+			img = "SoCraTes_BE.png"
+			name = "SoCraTes BE"
+			position = "Belgium"
+			social = [
+				["fa-twitter", "https://twitter.com/#SoCraTesBE"],
+				["fa-link", "http://socratesbe.org"]
+			]
+
+		[[params.team.members]]
+			img = "SoCraTes_IT.png"
+			name = "SoCraTes IT"
+			position = "Italy"
+			social = [
+				["fa-twitter", "https://twitter.com/SoCraTes_Italy"],
+				["fa-link", "http://www.socrates-conference.it"]
+			]
+
+		[[params.team.members]]
+			img = "SoCraTes_AT.svg"
+			name = "SoCraTes Austria"
+			position = "Austria"
+			social = [
+				["fa-twitter", "https://twitter.com/SoCraTesAT"],
+				["fa-link", "https://socrates-conference.at"]
+			]
+
+		[[params.team.members]]
+			img = "SoCraTes_CL.png"
+			name = "SoCraTes Chile"
+			position = "Chile"
+			social = [
+				["fa-twitter", "https://twitter.com/chile_socrates"],
+				["fa-link", "http://www.socrates-conference.cl"]
+			]
+
+		[[params.team.members]]
+			img = "scunconf_USA.png"
+			name = "Software Crafters Unconference"
+			position = "USA"
+			social = [
+				["fa-twitter", "https://twitter.com/#scunconf"],
+				["fa-link", "https://scunconf.com"]
+			]
+
+		[[params.team.members]]
+			img = "CodeFreeze.png"
+			name = "CodeFreeze"
+			position = "Finland"
+			social = [
+				["fa-twitter", "https://twitter.com/codefreeze_fi"],
+				["fa-link", "http://www.codefreeze.fi"]
+			]
+
+		[[params.team.members]]
+			img = "ITAKE.png"
+			name = "I T.A.K.E. Unconference"
+			position = "Romania"
+			social = [
+				["fa-twitter", "https://twitter.com/itakeunconf"],
+				["fa-link", "http://itakeunconf.com"]
+			]
+
+
+	# Sponsor section
+	[params.sponsors]
+		enable = true
+		title = "Our Sponsors"
+		subtitle = ""
+
+		[[params.sponsor]]
+			name = "Zenika Montréal"
+			logo = "zenika_128.png"
+			link = "https://www.zenika.ca"
+
+		[[params.sponsor]]
+			name = "Busbud"
+			logo = "busbud_128.png"
+			link = "https://www.busbud.com"
+
+		[[params.sponsor]]
+			name = "Bee Software"
+			logo = "bee_software_128.png"
+			link = "https://bee.software"
+
+		[[params.sponsor]]
+			name = "CodeCentric"
+			logo = "codecentric_128.png"
+			link = "https://www.codecentric.de"
+
+	# Client section
+	[params.clients_list]
+		enable = false
+
+		# All the clients' logos are stored under 'static/img/logos'.
+		# Replace them with your clients's logos.
+		[[params.clients]]
+			logo = "test.jpg"
+			link = "http://www.test.fr"
+
+	[params.contact]
+		enable = true
+		title = "Registration"
+		subtitle  = ""
+		buttontext = ""
+		explains = "Registration TBA." #is now open! "
+		#explains = "Pre-registration is now open. If the number of participants exceeds 50, a random draw will be held on the end of May."
+
+	# Footer section
+	[params.footer]
+		enable = true
+		copyright = "Published under the Apache License 2.0."
+
+		[[params.footer.social]]
+			icon = "fa-twitter"
+			link = "https://twitter.com/SoCraTes_CA/"
