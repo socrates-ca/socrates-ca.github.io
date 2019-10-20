@@ -98,7 +98,7 @@ googleAnalytics = "UA-149838891-1"
 		# at the root of this Hugo site.
 		# For more informtion take a look at the README.
 		title = "Information"
-		subtitle = "Information"
+		subtitle = "Useful details about the event. You might also be interested in reading [our wiki](https://github.com/socrates-ca/socrates-ca.github.io/wiki)"
 
 		[params.portfolio.modal]
 			client = "Client"
@@ -111,7 +111,7 @@ googleAnalytics = "UA-149838891-1"
 	[params.about]
 		enable = true
 		title = "History"
-		subtitle = "Previous and next edition."
+		subtitle = "Previous and next editions."
 		endpoint = "Be part<br>of the<br>event!"
 
 		# The events will be listed from the top to the bottom.
