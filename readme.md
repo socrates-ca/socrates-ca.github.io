@@ -1,4 +1,4 @@
-# socrates-fr.github.io [![Build Status](https://travis-ci.org/SoCraTes-CA/socrates-fr.github.io.svg?branch=hugo)](https://travis-ci.org/SoCraTes-CA/socrates-fr.github.io)
+# socrates-ca.github.io [![Build Status](https://travis-ci.org/SoCraTes-CA/socrates-ca.github.io.svg?branch=hugo)](https://travis-ci.org/SoCraTes-CA/socrates-ca.github.io)
 
 ## How to contribute ?
 
