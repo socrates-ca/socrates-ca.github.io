@@ -10,7 +10,7 @@
         {{ $indexNextClosingTag := 4 }}
         {{ range $index, $sponsor := .Site.Params.sponsor }}
             {{ if modBool $index 4 }}
-                <div class="row">
+                <div class="row align-end">
             {{ end }}
             <div class="col-sm-3">
                 <div class="team-member">

@@ -889,3 +889,8 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+
+.align-end {
+    display: flex;
+    align-items: flex-end;
+}
