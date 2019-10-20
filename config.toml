@@ -18,7 +18,7 @@ googleAnalytics = "UA-149838891-1"
 	# To provide some metadata for search engines feel free to add a few
 	# information about you and your website.
 	name = "SoCraTes CAnada"
-	description = "International Conference for Software Craft and Testing"
+	description = "International Conference for Software Craft and Testing - Canadian edition - March 13-15th, 2020"
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
