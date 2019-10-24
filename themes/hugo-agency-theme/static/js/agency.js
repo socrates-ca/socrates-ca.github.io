@@ -4,8 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
+onPageLoad(() => {
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -13,6 +13,8 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    openModalMatching(window.location.hash);
 });
 
 // Highlight the top nav as scrolling occurs
@@ -24,3 +26,11 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+function onPageLoad(callback) {
+    $(() => callback());
+}
+
+function openModalMatching(id) {
+    $(id).modal();
+}
