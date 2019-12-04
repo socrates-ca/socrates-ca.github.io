@@ -293,7 +293,7 @@ googleAnalytics = "UA-149838891-1"
 		title = "Registration"
 		subtitle  = ""
 		buttontext = ""
-		explains = "Registration is now closed! We are sold out!"
+		explains = "Registration is now open!"
 
 	# Footer section
 	[params.footer]
