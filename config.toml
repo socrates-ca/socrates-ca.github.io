@@ -278,6 +278,11 @@ googleAnalytics = "UA-149838891-1"
 			logo = "codecentric_128.png"
 			link = "https://www.codecentric.de"
 
+		[[params.sponsor]]
+			name = "Decathlon Developers"
+			logo = "decathlon_developers_128.png"
+			link = "https://developers.decathlon.com"
+
 	# Client section
 	[params.clients_list]
 		enable = false
