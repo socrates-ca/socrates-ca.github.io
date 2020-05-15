@@ -112,7 +112,7 @@ googleAnalytics = "UA-149838891-1"
 		enable = true
 		title = "History"
 		subtitle = "Previous and next editions."
-		endpoint = "Be part<br>of the<br>event!"
+		endpoint = "Be part of the event!"
 
 		# The events will be listed from the top to the bottom.
 		# All images are stored under 'static/img/about'.
@@ -120,9 +120,15 @@ googleAnalytics = "UA-149838891-1"
 
 		[[params.about.events]]
 			img = "5.jpg"
-			date = "March, 2020"
-			title = "First edition"
+			date = "2021"
+			title = "Second edition"
 			description = "Coming soon!"
+
+		[[params.about.events]]
+			img = "5.jpg"
+			date = "March 13-15th, 2020"
+			title = "First edition"
+			description = "It took place at the Selenia Lodge (Québec)"
 
 	# Team section
 	[params.team]
