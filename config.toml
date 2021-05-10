@@ -18,7 +18,7 @@ googleAnalytics = "UA-149838891-1"
 	# To provide some metadata for search engines feel free to add a few
 	# information about you and your website.
 	name = "SoCraTes CAnada"
-	description = "International Conference for Software Craft and Testing - Canadian edition - March 13-15th, 2020"
+	description = "International Conference for Software Craft and Testing - Canadian edition"
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
@@ -36,7 +36,7 @@ googleAnalytics = "UA-149838891-1"
 
 	# Navigation
 	[params.navigation]
-		brand = "SoCraTes CAnada 2020"
+		brand = "SoCraTes CAnada"
 		services = "What it is about?"
 		portfolio = "Information"
 		about = "History"
@@ -63,8 +63,8 @@ googleAnalytics = "UA-149838891-1"
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.png' in
 		# the 'static/img' folder.
-		title = "March 13-15th, 2020.<br/>International Conference for Software Craft and Testing."
-		subtitle = "SoCraTes CAnada 2020"
+		title = "International Conference for Software Craft and Testing. Second edition coming soon!"
+		subtitle = "SoCraTes CAnada 2022"
 		buttontext = "Tell me more"
 
 	# Services section
@@ -119,8 +119,8 @@ googleAnalytics = "UA-149838891-1"
 		# Replace them with your own.
 
 		[[params.about.events]]
-			img = "5.jpg"
-			date = "2021"
+			img = "1.jpg"
+			date = "2022"
 			title = "Second edition"
 			description = "Coming soon!"
 
