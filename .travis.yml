@@ -14,7 +14,7 @@ branches:
 
 install:
   # Hugo - documentation
-  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.deb
+  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-64bit.deb
   - sudo dpkg -i /tmp/hugo.deb
 
 script:
