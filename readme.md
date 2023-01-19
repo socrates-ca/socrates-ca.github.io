@@ -1,4 +1,4 @@
-# socrates-ca.github.io [![Build Status](https://travis-ci.org/SoCraTes-CA/socrates-ca.github.io.svg?branch=hugo)](https://travis-ci.org/SoCraTes-CA/socrates-ca.github.io)
+# socrates-ca.github.io [![CI](https://github.com/socrates-ca/socrates-ca.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/socrates-ca/socrates-ca.github.io/actions/workflows/main.yml)
 
 ## How to contribute ?
 
@@ -22,4 +22,4 @@ hugo
 
 ### Continuous Delivery
 
-When a PR (on the branch `hugo`) is merge, [Travis](https://travis-ci.org) build and deploy automatically the site.
+When a PR (on the branch `hugo`) is merged, [GitHub Actions](https://github.com/socrates-ca/socrates-ca.github.io/actions) is triggered to build and deploy automatically the site.
