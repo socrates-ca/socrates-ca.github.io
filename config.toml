@@ -275,28 +275,23 @@ googleAnalytics = "UA-149838891-1"
 
 		[[params.sponsor]]
 			name = "Zenika Montréal"
-			logo = "zenika_128.png"
+			logo = "zenika_256.png"
 			link = "https://www.zenika.ca"
 
 		[[params.sponsor]]
-			name = "Busbud"
-			logo = "busbud_128.png"
-			link = "https://www.busbud.com"
+			name = "Abbeal"
+			logo = "abbeal_256.png"
+			link = "https://www.abbeal.com"
 
 		[[params.sponsor]]
-			name = "Bee Software"
-			logo = "bee_software_128.png"
-			link = "https://bee.software"
+			name = "Nexapp"
+			logo = "nexapp_256.png"
+			link = "https://www.nexapp.ca"
 
 		[[params.sponsor]]
-			name = "CodeCentric"
-			logo = "codecentric_128.png"
-			link = "https://www.codecentric.de"
-
-		[[params.sponsor]]
-			name = "Decathlon Developers"
-			logo = "decathlon_developers_128.png"
-			link = "https://developers.decathlon.com"
+			name = "Coveo"
+			logo = "coveo_256.png"
+			link = "https://www.coveo.com"
 
 	# Client section
 	[params.clients_list]
@@ -311,9 +306,9 @@ googleAnalytics = "UA-149838891-1"
 	[params.contact]
 		enable = true
 		title = "Registration"
-		subtitle  = ""
+		subtitle  = "Registration is now closed. Coming soon!"
 		buttontext = ""
-		explains = "Registration is now closed! We are sold out!"
+		explains = ""
 
 	# Footer section
 	[params.footer]

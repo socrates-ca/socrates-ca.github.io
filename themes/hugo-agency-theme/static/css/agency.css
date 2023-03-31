@@ -209,10 +209,15 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
+    text-shadow: 2px 2px 8px black;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
+}
+
+.navbar-default.navbar-shrink .nav li a {
+    text-shadow: 1px 1px 2px black;
 }
 
 .navbar-default .nav li a:hover,
@@ -283,8 +288,13 @@ header .intro-text {
     padding-bottom: 50px;
 }
 
+header .intro-text a {
+    text-shadow: 1px 1px 1px black;
+}
+
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
+    text-shadow: 2px 2px 8px black;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 22px;
     font-style: italic;
@@ -293,6 +303,7 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
+    text-shadow: 2px 2px 8px black;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 50px;
@@ -344,11 +355,11 @@ section h3.section-subheading {
     font-weight: 400;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     section {
         padding: 150px 0;
     }
-}
+} */
 
 .service-heading {
     margin: 15px 0;
@@ -518,10 +529,14 @@ section h3.section-subheading {
     text-align: center;
     color: #fff;
     background-color: #fed136;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .timeline > li .timeline-image h4 {
-    margin-top: 12px;
+    margin: 0;
+    padding: 0 10px;
     font-size: 10px;
     line-height: 14px;
 }
@@ -589,7 +604,6 @@ section h3.section-subheading {
     }
 
     .timeline > li .timeline-image h4 {
-        margin-top: 16px;
         font-size: 13px;
         line-height: 18px;
     }
@@ -617,7 +631,6 @@ section h3.section-subheading {
     }
 
     .timeline > li .timeline-image h4 {
-        margin-top: 30px;
         font-size: 18px;
         line-height: 26px;
     }
@@ -642,12 +655,25 @@ section h3.section-subheading {
         margin-left: -85px;
     }
 
-    .timeline > li .timeline-image h4 {
-        margin-top: 40px;
-    }
-
     .timeline > li.timeline-inverted > .timeline-panel {
         padding: 0 100px 20px 20px;
+    }
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 768px) {
+    .team-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    .team-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
