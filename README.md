@@ -54,6 +54,6 @@ To simply build the site locally:
 hugo
 ```
 
-### Continuous Delivery
+## Deploy
 
 When a PR (on the branch `hugo`) is merged, [GitHub Actions](https://github.com/socrates-ca/socrates-ca.github.io/actions) is triggered to build and deploy automatically the site.
