@@ -306,7 +306,7 @@ googleAnalytics = "UA-149838891-1"
 	[params.contact]
 		enable = true
 		title = "Registration"
-		subtitle  = "Registration is now closed. Coming soon!"
+		subtitle  = "Registration is now open!"
 		buttontext = ""
 		explains = ""
 
