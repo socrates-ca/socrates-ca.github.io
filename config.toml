@@ -63,7 +63,7 @@ googleAnalytics = "UA-149838891-1"
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.png' in
 		# the 'static/img' folder.
-		title = "International Conference for Software Craft and Testing. Second edition coming soon!"
+		title = "International Conference for Software Craft and Testing. Second edition: Oct 13-15, 2023"
 		subtitle = "SoCraTes CAnada 2023"
 		buttontext = "Tell me more"
 
@@ -306,7 +306,7 @@ googleAnalytics = "UA-149838891-1"
 	[params.contact]
 		enable = true
 		title = "Registration"
-		subtitle  = "Registration is now open!"
+		subtitle  = "Registration is now open! Grab your ticket to attend the 2 days unconference this Fall. Limited seats."
 		buttontext = ""
 		explains = ""
 
