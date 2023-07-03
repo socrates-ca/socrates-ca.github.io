@@ -355,6 +355,10 @@ section h3.section-subheading {
     font-weight: 400;
 }
 
+section h3.section-subheading p {
+    font-size: 16px;
+}
+
 /* @media (min-width: 768px) {
     section {
         padding: 150px 0;

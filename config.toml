@@ -71,7 +71,7 @@ googleAnalytics = "UA-149838891-1"
 	[params.services]
 		enable = true
 		title = "What it is about?"
-		subtitle = "This event is about the sustainable creation of useful software in a responsible way."
+		subtitle = "This [2-day Open-Space Unconference](https://en.wikipedia.org/wiki/Open_Space_Technology) focuses on how to craft useful software, in a responsible and maintainable way.\n\nExpect rich discussions around tests, software architecture, team dynamics, and more.\n\nThe event is hosted at the [Selenia Lodge, Québec, Canada](https://www.selenialodge.com/), a typical Canadian cabin in the beautiful Laurentides 🍁"
 
 		[[params.services.row]]
 
@@ -83,12 +83,12 @@ googleAnalytics = "UA-149838891-1"
 			[[params.services.row.list]]
 				icon = "fa-play-circle"
 				title = "It's about Action"
-				description = "The event will be run as a non-profit, low-cost event. It will be much like a retreat. We will be there for 48 hours to collaborate and share ideas."
+				description = "The event will be run as a non-profit, low-cost event. It will be much like a code retreat. We will be there for 48 hours to collaborate and share ideas."
 
 			[[params.services.row.list]]
 				icon = "fa-plus-circle"
-				title = "It's about Fun"
-				description = "We will not only spend the days together but also the nights. And – believe it or not – programmers are a great company! There will be be lots of opportunities to spend your time. Starting with simple chilling over snowshoeing, playing games, hanging around…"
+				title = "It's also about Fun"
+				description = "We will spend the whole weekend together. Besides interesting work sessions, there will be be lots of opportunities to spend your time: walking among the autumn trees, playing games, or just chilling around…"
 
 	# Portfolio section
 	[params.portfolio]
