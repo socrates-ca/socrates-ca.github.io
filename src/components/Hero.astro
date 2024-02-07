@@ -1,0 +1,44 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { src = '/hero.webp' } = Astro.props
+---
+
+<section class="hero my-24">
+  <div class="container">
+    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
+      <div class="flex flex-col items-center gap-8 md:items-start">
+        <h1 class="text-center text-6xl md:text-left lg:text-8xl">
+          <slot><div class="text-gradient">SoCraTes Canada</div> <div class="text-4xl lg:text-6xl">Oct 4-6, 2024</div></slot>
+        </h1>
+        <div class="flex flex-col gap-3 min-[500px]:flex-row">
+          <a class="button has-icon" href="#about">
+            <Icon name="ion:information-circle-outline" />
+            Tell me more
+          </a>
+          <a class="button has-icon color-secondary" href="#">
+            <Icon name="ion:ticket-outline" />
+            Coming Soon
+          </a>
+        </div>
+      </div>
+      <img class="hidden lg:block" src={src} alt="" decoding="async" />
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .text-gradient {
+    background: linear-gradient(315deg, var(--primary-400) 25%, var(--secondary-300));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  :global(.darkmode .text-gradient) {
+    background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-100));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
