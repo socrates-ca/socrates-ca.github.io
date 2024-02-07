@@ -12,7 +12,7 @@ import logo from '../assets/img/logo.svg'
       <span class="font-bold">Software Craft and Testing 🍁 Canada</span>
     </a>
     <div class="wrapper">
-      <nav class="desktop-menu" aria-label="Main navigation desktop">
+      <nav class="desktop-menu mr-4" aria-label="Main navigation desktop">
         <ul class="menu">
           <slot />
         </ul>
@@ -58,7 +58,7 @@ import logo from '../assets/img/logo.svg'
     const checkMenuSize = () => {
       const mainNavWidth = mainNav?.getBoundingClientRect().width || 0
       const desktopMenuWidth = document.querySelector('.desktop-menu')?.getBoundingClientRect().width || 0
-      const logoWidthBuffer = 300
+      const logoWidthBuffer = 500
       const totalMenuWidth = Math.round(desktopMenuWidth) + logoWidthBuffer
 
       if (totalMenuWidth >= mainNavWidth) {
