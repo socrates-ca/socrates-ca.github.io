@@ -1,4 +1,5 @@
 ---
+import { Media } from 'accessible-astro-components'
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 ---
 
@@ -9,10 +10,16 @@ import DefaultLayout from '../layouts/DefaultLayout.astro'
     </div>
   </section>
   <section class="my-12">
-    <div class="space-content container">
-      <p class="text-2xl">Oops, you've wandered off the moose trail! Click below, and we'll whisk you back home faster than a sled down a snowy hill.</p>
-      <p class="text-2xl">Sorry for the detour, eh!</p>
-      <a class="button" href="/">Take me home 🍁</a>
+    <div class="items-top container block md:flex justify-between gap-2">
+      <div class="space-content">
+        <p class="text-2xl">
+          Oops, you've wandered off the moose trail! Click below, and we'll whisk you back home faster than a sled down
+          a snowy hill.
+        </p>
+        <p class="text-2xl">Sorry for the detour, eh!</p>
+        <a class="button" href="/">Take me home 🍁</a>
+      </div>
+      <Media class="mx-auto md:-mt-20" src="/moose-404.webp" />
     </div>
   </section>
 </DefaultLayout>
