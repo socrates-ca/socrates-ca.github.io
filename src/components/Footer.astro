@@ -1,0 +1,23 @@
+---
+const currentYear = new Date().getFullYear()
+---
+
+<footer>
+  <section class="pb-8 pt-4">
+    <div class="container">
+      <div class="divider mb-4 h-1 w-full"></div>
+      <p>
+        &copy; {currentYear} - Made with ❤️ and maple syrup, by <a href="https://github.com/nicoespeon">Nicolas Carlo</a
+        >. Check the source code on <a href="https://github.com/socrates-ca/socrates-ca.github.io">GitHub</a>.
+      </p>
+    </div>
+  </section>
+</footer>
+
+<style lang="scss">
+  .divider {
+    color: var(--neutral-900);
+    background-image: linear-gradient(40deg, var(--primary-100), var(--secondary-200));
+    transform: skewX(-30deg);
+  }
+</style>
