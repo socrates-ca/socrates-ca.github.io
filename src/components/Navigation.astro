@@ -41,7 +41,7 @@ import logo from '../assets/img/logo.svg'
       const currenPathname = window.location.pathname
 
       mobileDesktopMenus?.forEach((menu) => {
-        const menuItems = [...menu.querySelectorAll('a:not([rel*="external"])')] as HTMLAnchorElement[]
+        const menuItems = [...menu.querySelectorAll('a:not([rel*="external"]):not([href*="#"])')] as HTMLAnchorElement[]
 
         menuItems.forEach((menuItem) => {
           if (currenPathname.includes(menuItem.pathname.replaceAll('/', '')) && menuItem.textContent !== 'Home') {
