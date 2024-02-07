@@ -1,4 +1,5 @@
 ---
+import { Modal } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 ---
 
@@ -15,12 +16,20 @@ import { Icon } from 'astro-icon/components'
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <a class="button has-icon" href="#about">
             <Icon name="ion:information-circle-outline" />
-            Tell me more
+            Learn More
           </a>
-          <a class="button has-icon color-secondary" href="#">
+
+          <button class="button has-icon color-secondary" id="tickets-coming-soon" >
             <Icon name="ion:ticket-outline" />
-            Coming Soon
-          </a>
+            Join Us
+          </button>
+          <Modal triggerId="tickets-coming-soon" title="Tickets for the 2024 edition are not available yet" closeText="Close">
+            <!-- TODO: give a date estimate for opening and suggest them to follow me on LI or Twitter, or join the community. -->
+            <p>
+              Ah yes, and I be the <strong>second</strong> Modal. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Sed, a! Ratione eaque temporibus alias tempora pariatur dolorem.
+            </p>
+          </Modal>
         </div>
       </div>
       <img class="dark:hidden lg:block" src="/hero.webp" alt="" decoding="async" />
