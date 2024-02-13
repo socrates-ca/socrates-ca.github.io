@@ -1,0 +1,408 @@
+---
+import { Media } from 'accessible-astro-components'
+import ContentMedia from '../components/ContentMedia.astro'
+import Counter from '../components/Counter.astro'
+import Feature from '../components/Feature.astro'
+import Hero from '../components/Hero.astro'
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+---
+
+<DefaultLayout>
+  <Hero />
+
+  <section class="my-56" id="main-content">
+    <div class="container">
+      <h2 id="about" class="text-6xl">About SoCraTes Canada</h2>
+
+      <div class="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
+        <Counter count="25" title="Participants" sub="who care about quality" />
+        <Counter count="48" title="Hours" sub="in a cabin" />
+        <Counter count="82" title="Mashmallows" sub="waiting to be grilled" />
+        <Counter count="167+" title="Ideas" sub="to be shared" />
+      </div>
+
+      <div class="space-content mt-20 text-lg">
+        <p>
+          SoCraTes stands for <strong>So</strong>ftware <strong>Cra</strong>ft and <strong>Tes</strong>ting. It's a
+          2-day <a href="https://www.youtube.com/watch?v=f8kMII_N_OY" target="_blank" class="italic"
+            >Open-Space unconference</a
+          >.
+        </p>
+        <p>
+          You know all the insightful discussions that happen in the hallway of a conference? That's what an
+          <em>unconference</em> is! We bring 25 passionate people offsite for 2 days and make it easy for sessions to happen.
+          Each participant is also a potential speaker. At the end of this "retreat", everyone goes back home with new ideas,
+          perspectives, and connections.
+        </p>
+      </div>
+
+      <div class="mt-20 flex flex-col gap-12 text-xl">
+        <ContentMedia imgSrc="/marketplace.jpg" reverseImg>
+          <h3>It starts with the Marketplace</h3>
+          <p>
+            Before each work session, we gather in the main lodge to propose and select the topics we want to discuss.
+          </p>
+          <p>
+            Any participant can propose a topic they would like to teach or learn about. Pick a time and place, present
+            your session to the group, and voilà!
+          </p>
+        </ContentMedia><ContentMedia imgSrc="/roundtable-session.webp">
+          <h3>Work sessions</h3>
+          <p>
+            For a few hours, participants gather in small groups to discuss the topics they are interested in. It's a
+            great way to learn from others, share your knowledge, and get feedback on your ideas.
+          </p>
+          <p>
+            Most sessions will look like roundtable discussions. Although, some may propose hands-on coding or other
+            workshops.
+          </p>
+        </ContentMedia>
+        <ContentMedia imgSrc="/meals.jpeg" reverseImg>
+          <h3>Enjoying meals</h3>
+          <p>
+            We spend lunch and dinner together in the main lodge. It's a great time to continue the discussions, or to
+            relax and enjoy the Canadian experience.
+          </p>
+          <p>Meals are prepared and served by a local caterer.</p>
+        </ContentMedia>
+        <ContentMedia imgSrc="/having-fun.jpg">
+          <h3>And having fun!</h3>
+          <p>
+            Overall, this is a retreat to learn, share, and enjoy time together. We have fun activities scheduled in the
+            evenings, such as grilling marshmallows, playing board games, etc.
+          </p>
+          <p>It's a great opportunity to make new connections and maybe new friends!</p>
+        </ContentMedia>
+      </div>
+
+      <div class="mt-20 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="ion:people-outline" title="It's about People">
+          Participants love developing high-quality, maintainable softwares. Expect creative discussions and rich
+          learnings from passionate people.
+        </Feature>
+        <Feature icon="ion:rocket-outline" title="It's about Action">
+          For 48 hours, we will share ideas in a self-organized Open Space. Expect hands-on coding sessions, roundtable
+          discussions, interactive talks and more!
+        </Feature>
+        <Feature icon="ion:happy-outline" title="It's about Fun">
+          Besides insightful work sessions, enjoy the Canadian experience: take a walk in the woods, have a beer near
+          the firecamp, or just relax in the hot tub…
+        </Feature>
+      </div>
+
+      <div class="space-content mt-20 text-lg">
+        <p>
+          SoCraTes Canada is the Canadian edition of a larger family. You will find other SoCraTes unconferences around
+          the globe, such as:
+        </p>
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <li><a href="https://socrates-fr.github.io/" target="_blank">SoCraTes France</a></li>
+          <li><a href="https://www.socrates-conference.de/" target="_blank">SoCraTes Germany</a></li>
+          <li><a href="http://socratesuk.org/" target="_blank">SoCraTes UK</a></li>
+          <li><a href="http://www.socrates-conference.es/" target="_blank">SoCraTes Canaries</a></li>
+          <li><a href="https://socrates-ch.org/" target="_blank">SoCraTes Switzerland</a></li>
+          <li><a href="http://socratesbe.org/" target="_blank">SoCraTes BE</a></li>
+          <li><a href="http://www.socrates-conference.it/" target="_blank">SoCraTes IT</a></li>
+          <li><a href="https://socrates-conference.at/" target="_blank">SoCraTes Austria</a></li>
+          <li><a href="http://www.socrates-conference.cl/" target="_blank">SoCraTes Chile</a></li>
+          <li><a href="http://www.codefreeze.fi/" target="_blank">Code Freeze</a></li>
+          <li>
+            <a href="https://mozaicworks.com/product/i-t-a-k-e-unconference" target="_blank">I.T.A.K.E Unconference</a>
+          </li>
+          <li><a href="https://scunconf.com/" target="_blank">Software Crafters Unconference</a></li>
+        </ul>
+      </div>
+
+      <div class="space-content mt-20 text-lg">
+        <div class="timeline-container">
+          <p class="mb-10">This won't be our first drill. We had previous editions under our belt:</p>
+
+          <div class="timeline">
+            <div class="timeline-slide">
+              <div class="slide-top font-bold">March 2020</div>
+              <div class="slide-bottom">
+                <div>First winter edition</div>
+
+                <Media class="rounded-lg" src="/team-socrates-2020.jpg" />
+              </div>
+            </div>
+
+            <div class="timeline-slide">
+              <div class="slide-top font-bold">October 2023</div>
+              <div class="slide-bottom">
+                <div>Second edition (Fall colors)</div>
+                <Media class="rounded-lg" src="/team-socrates-2023.jpg" />
+              </div>
+            </div>
+
+            <div class="timeline-slide">
+              <div class="slide-top font-bold">October 2024</div>
+              <div class="slide-bottom">
+                <div>Third edition, with you?</div>
+                <Media class="rounded-lg" src="/team-socrates-2024.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="my-40">
+        <div class="container">
+          <h2 id="venue" class="text-6xl">Discover the Selenia Lodge</h2>
+          <div class="space-content mt-20 text-lg">
+            <p>
+              The 2024 edition will take place at <a href="https://www.selenialodge.com/" target="_blank"
+                >the Selenia Lodge</a
+              >, a hidden treasure of the Laurentides.
+            </p>
+            <p>
+              It's a wonderful place to relax, work, and have fun. The lodge is located 1h45 car drive away from
+              Montreal, to the North. It's a perfect place to enjoy the Canadian fall colors in early October 🍁
+            </p>
+            <p>
+              If you need help to get there, we facilitate <a
+                href="https://github.com/socrates-ca/socrates-ca.github.io/wiki/CarSharing">Car Sharing</a
+              > between participants.
+            </p>
+            <ContentMedia imgSrc="/selenia-lodge.jpg">
+              <p>
+                One big central lodge is reserved for our work sessions and meals. This is where we spend most of our
+                day.
+              </p>
+              <p>We rest in cabins that are spread around the main lodge.</p>
+              <p>
+                Participants share a cabin with 1 to 3 other participants. Each participant has their individual
+                bedroom.
+              </p>
+              <p>The lodge is also equiped with fire places and hot tubs, to relax at the end of the day 🔥</p>
+            </ContentMedia>
+            <p></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-40">
+        <div class="container">
+          <h2 id="schedule" class="text-6xl">The Agenda</h2>
+
+          <div class="space-content mt-20 text-lg">
+            <p>
+              The conference starts on <strong>Friday 4th at 2pm</strong> and ends on <strong>Sunday 6th at 2pm</strong
+              >.
+            </p>
+            <p>
+              The exact Agenda is made by the participants, on the spot. It's an Open Space, so <a
+                href="http://unconference.net/unconferencing-how-to-prepare-to-attend-an-unconference/"
+                target="_blank">it's up to you</a
+              > to propose a session, or to join one.
+            </p>
+            <p>
+              Facilitation will be in English. However, it will be possible to run sessions in other languages (eg.
+              French).
+            </p>
+            <p>
+              In the evenings, participants are free to chill as they like: listening to music in the hot tub,
+              continuing the discussions around the fire pit, playing pool or board games, or even live-hacking programs
+              solo or together… you choose!
+            </p>
+            <p>Here is a rough idea of how the unconference would look like, time-wise:</p>
+          </div>
+
+          <div class="relative mt-12 overflow-x-auto">
+            <table class="text-md w-full table-fixed text-center text-gray-500 dark:text-gray-400">
+              <thead class="bg-gray-50 text-sm uppercase text-red-700 dark:bg-gray-700 dark:text-yellow-400">
+                <tr>
+                  <th scope="col" class="px-6 py-3"></th>
+                  <th scope="col" class="px-6 py-3">Friday 4</th>
+                  <th scope="col" class="px-6 py-3">Saturday 5</th>
+                  <th scope="col" class="px-6 py-3">Sunday 6</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >before</th
+                  >
+                  <td class="px-6 py-4">-</td>
+                  <td class="px-6 py-4">Breakfast in your cabin</td>
+                  <td class="px-6 py-4">Breakfast in your cabin</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >9am</th
+                  >
+                  <td class="px-6 py-4">-</td>
+                  <td class="px-6 py-4">Start of day / Marketplace</td>
+                  <td class="px-6 py-4">Start of day / Marketplace</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >10am</th
+                  >
+                  <td class="px-6 py-4">-</td>
+                  <td class="px-6 py-4 text-center" rowspan="2">Work sessions</td>
+                  <td class="px-6 py-4 text-center" rowspan="2">Work sessions</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >11am</th
+                  >
+                  <td class="px-6 py-4" rowspan="3">Arrival at Selenia Lodge</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >12pm</th
+                  >
+                  <td class="px-6 py-4">Lunch</td>
+                  <td class="px-6 py-4">Lunch</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >1pm</th
+                  >
+                  <td class="px-6 py-4" rowspan="2">Work sessions</td>
+                  <td class="px-6 py-4">Free time</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >2pm</th
+                  >
+                  <td class="px-6 py-4">Start of conference</td>
+                  <td class="px-6 py-4">End of conference</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >3pm</th
+                  >
+                  <td class="px-6 py-4" rowspan="3">Work sessions</td>
+                  <td class="px-6 py-4" rowspan="3">Work sessions</td>
+                  <td class="px-6 py-4" rowspan="3">Leaving Selenia Lodge</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >4pm</th
+                  >
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >5pm</th
+                  >
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >6pm</th
+                  >
+                  <td class="px-6 py-4">Free time</td>
+                  <td class="px-6 py-4">Free time</td>
+                  <td class="px-6 py-4">-</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >7pm</th
+                  >
+                  <td class="px-6 py-4">Dinner</td>
+                  <td class="px-6 py-4">Dinner</td>
+                  <td class="px-6 py-4">-</td>
+                </tr>
+                <tr
+                  class="border-b odd:bg-white even:bg-gray-50 hover:bg-gray-50 dark:border-gray-700 odd:dark:bg-gray-900 even:dark:bg-gray-800 dark:hover:bg-gray-600"
+                >
+                  <th scope="row" class="whitespace-nowrap px-6 py-4 font-semibold text-red-700 dark:text-yellow-500"
+                    >after</th
+                  >
+                  <td class="px-6 py-4">Free time</td>
+                  <td class="px-6 py-4">Free time</td>
+                  <td class="px-6 py-4">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-40">
+        <div class="container">
+          <h2 id="sponsors" class="text-6xl">Our beloved Sponsors</h2>
+          <div class="space-content mt-20 text-lg">
+            <p>
+              The conference could not happen without their support to the community! They help make the conference
+              affordable and share the values of developing maintainable software. This 2-day unconference is a perfect
+              moment to talk authentically with them.
+            </p>
+            <p class="font-bold">
+              If you want to be a sponsor, <a
+                href="mailto:nicolascarlo.espeon@gmail.com?subject=SoCraTes CA 2024 sponsorship"
+                >reach out (nicolascarlo.espeon@gmail.com)</a
+              > to get the details.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</DefaultLayout>
+
+<style lang="scss">
+  .timeline-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .timeline {
+    display: flex;
+    padding: 0;
+    text-align: center;
+  }
+  .timeline-slide {
+    flex-grow: 1;
+  }
+  .timeline-slide .slide-top {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px 40px;
+  }
+  .timeline-slide .slide-bottom {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    border-top: 4px solid var(--secondary-200);
+    position: relative;
+  }
+  .timeline-slide .slide-bottom:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #e8eeff;
+    border-radius: 25px;
+    border: 4px solid var(--secondary-200);
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 12px); // align circle to center
+    transition: all 200ms ease-in;
+  }
+</style>

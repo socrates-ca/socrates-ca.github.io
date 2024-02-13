@@ -5,14 +5,18 @@ import { Image } from 'astro:assets'
 import logo from '../assets/img/logo.svg'
 ---
 
-<div id="main-navigation" class="is-desktop py-8">
+<!-- Since navbar is fixed, take up some space at the top -->
+<div class="py-8" aria-hidden="true"></div>
+
+<div id="main-navigation" class="is-desktop pb-6 fixed top-0 w-full z-50">
+  <div class="top-bar h-1 w-full mb-6"></div>
   <div class="container">
     <a href="/" class="flex items-center gap-2 !no-underline">
       <Image src={logo} alt="SoCraTes Canada" width="40" height="40" />
       <span class="font-bold">Software Craft and Testing 🍁 Canada</span>
     </a>
     <div class="wrapper">
-      <nav class="desktop-menu mr-4" aria-label="Main navigation desktop">
+      <nav class="desktop-menu" aria-label="Main navigation desktop">
         <ul class="menu">
           <slot />
         </ul>
@@ -223,6 +227,8 @@ import logo from '../assets/img/logo.svg'
   @use '../assets/scss/base/outline' as *;
 
   #main-navigation {
+    background-color: var(--background);
+
     > .container {
       display: flex;
       justify-content: space-between;
@@ -384,6 +390,10 @@ import logo from '../assets/img/logo.svg'
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
       }
     }
+  }
+
+  .top-bar {
+    background-image: linear-gradient(40deg, var(--primary-200), var(--secondary-300));
   }
 
   .darkmode-toggle {

@@ -4,14 +4,77 @@ import { Media } from 'accessible-astro-components'
 const { imgSrc, reverseImg = false } = Astro.props
 ---
 
-<section class="my-64">
-  <div class="container">
-    <div class="grid grid-cols-1 gap-24 md:grid-cols-2">
-      {!reverseImg ? <Media class="rounded-lg" src={imgSrc} /> : ''}
-      <div class="space-content flex flex-col justify-center">
-        <slot />
+<div class="grid grid-cols-1 gap-24 md:grid-cols-2">
+  {
+    !reverseImg ? (
+      <div class="img-container">
+        <Media class="relative z-10 rounded-lg" src={imgSrc} />
       </div>
-      {reverseImg ? <Media class="rounded-lg" src={imgSrc} /> : ''}
-    </div>
+    ) : (
+      ''
+    )
+  }
+  <div class="space-content flex flex-col justify-center">
+    <slot />
   </div>
-</section>
+  {
+    reverseImg ? (
+      <div class="img-container reversed">
+        <Media class="relative z-10 rounded-lg" src={imgSrc} />
+      </div>
+    ) : (
+      ''
+    )
+  }
+</div>
+
+<style lang="scss">
+  @use '../assets/scss/base/breakpoint' as *;
+
+  .img-container {
+    position: relative;
+    width: calc(100% - 0.5rem);
+
+    > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    @include breakpoint(large) {
+      width: 100%;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before,
+    &::after {
+      border-radius: 0.5rem;
+    }
+
+    &::before {
+      inset: 0;
+      background-color: var(--neutral-100);
+      border: 3px solid var(--neutral-700);
+      box-shadow: 0 0 0 6px var(--neutral-100);
+      z-index: 1;
+    }
+
+    &::after {
+      background-color: var(--action-color);
+      inset: 1rem -0.85rem -0.85rem 1rem;
+      z-index: 0;
+    }
+
+    &.reversed::after {
+      inset: -1rem 0.85rem 0.85rem -1rem;
+    }
+  }
+  :global(.darkmode .img-container::before) {
+    background-color: var(--dark-100);
+    box-shadow: 0 0 0 6px var(--dark-100);
+  }
+</style>
