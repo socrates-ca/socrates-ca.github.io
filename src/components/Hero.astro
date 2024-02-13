@@ -19,20 +19,26 @@ import { Icon } from 'astro-icon/components'
             Learn More
           </a>
 
-          <button class="button has-icon color-secondary" id="tickets-coming-soon" >
+          <button class="button has-icon color-secondary" id="tickets-coming-soon">
             <Icon name="ion:ticket-outline" />
             Join Us
           </button>
-          <Modal triggerId="tickets-coming-soon" title="Tickets for the 2024 edition are not available yet" closeText="Close">
-            <!-- TODO: give a date estimate for opening and suggest them to follow me on LI or Twitter, or join the community. -->
+          <Modal
+            triggerId="tickets-coming-soon"
+            title="Tickets for the 2024 edition are not available yet"
+            closeText="Close"
+          >
             <p>
-              Ah yes, and I be the <strong>second</strong> Modal. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Sed, a! Ratione eaque temporibus alias tempora pariatur dolorem.
+              Registration for the 2024 edition of SoCraTes Canada is not available yet. We need to finalize the details
+              first.
             </p>
+            <p>To stay tuned and be the first to know when tickets are available, follow us on <a
+              href="https://twitter.com/SoCraTes_CA/">Twitter</a
+            >, or join <a href="http://slack.softwarecraftsmanship.org/">our community (channel #socrates_ca)</a>.</p>
           </Modal>
         </div>
       </div>
-      <img class="hidden lg:block dark:hidden" src="/hero.webp" alt="" decoding="async" />
+      <img class="hidden dark:hidden lg:block" src="/hero.webp" alt="" decoding="async" />
       <img class="hidden dark:lg:block" src="/hero-dark.webp" alt="" decoding="async" />
     </div>
   </div>

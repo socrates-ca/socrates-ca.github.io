@@ -13,7 +13,7 @@ import logo from '../assets/img/logo.svg'
   <div class="container">
     <a href="/" class="flex items-center gap-2 !no-underline">
       <Image src={logo} alt="SoCraTes Canada" width="40" height="40" />
-      <span class="font-bold">Software Craft and Testing 🍁 Canada</span>
+      <span class="font-bold">SoCraTes Canada 🇨🇦</span>
     </a>
     <div class="wrapper">
       <nav class="desktop-menu" aria-label="Main navigation desktop">
@@ -62,7 +62,7 @@ import logo from '../assets/img/logo.svg'
     const checkMenuSize = () => {
       const mainNavWidth = mainNav?.getBoundingClientRect().width || 0
       const desktopMenuWidth = document.querySelector('.desktop-menu')?.getBoundingClientRect().width || 0
-      const logoWidthBuffer = 500
+      const logoWidthBuffer = 330
       const totalMenuWidth = Math.round(desktopMenuWidth) + logoWidthBuffer
 
       if (totalMenuWidth >= mainNavWidth) {

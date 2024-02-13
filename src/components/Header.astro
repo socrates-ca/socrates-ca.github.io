@@ -1,5 +1,5 @@
 ---
-import { SkipLinks } from 'accessible-astro-components'
+import { Modal, SkipLinks } from 'accessible-astro-components'
 import { Icon } from 'astro-icon/components'
 import Navigation from '../components/Navigation.astro'
 ---
@@ -19,36 +19,42 @@ import Navigation from '../components/Navigation.astro'
     <li class="menu-item">
       <a href="/#sponsors">Sponsors</a>
     </li>
-    <li class="menu-item has-dropdown">
-      <button aria-haspopup="true" aria-expanded="false">FAQ</button>
-      <ul class="dropdown-menu">
-        <li class="submenu-item">
-          <a href="/faq#what-to-bring">What to bring?</a>
-        </li>
-        <li class="submenu-item">
-          <a href="/faq#getting-there">How to get there?</a>
-        </li>
-        <li class="submenu-item">
-          <a href="/faq#family">Can your family join?</a>
-        </li>
-        <li class="submenu-item">
-          <a href="/code-of-conduct">Code of Conduct</a>
-        </li>
-      </ul>
+    <li class="menu-item">
+      <a href="/faq">FAQ</a>
+    </li>
+    <li class="menu-item">
+      <a href="/code-of-conduct">Code of Conduct</a>
     </li>
     <!-- TODO: enable when tickets are available -->
     <!-- <li class="menu-item">
-      <a href="https://accessible-astro.dev" title="Buy tickets" rel="external noopener noreferrer" class="flex items-center gap-1.5">
+      <a href="#" title="Buy tickets" rel="external noopener noreferrer" class="flex items-center gap-1.5">
         <Icon name="ion:ticket-outline" />
         Tickets
       </a>
     </li> -->
+    <li class="menu-item" id="tickets-coming-soon">
+      <a href="#0" onclick="false" title="Buy tickets" class="flex items-center gap-1.5">
+        <Icon name="ion:ticket-outline" />
+        Tickets
+      </a>
+    </li>
     <li class="menu-item type-icon">
       <a href="https://twitter.com/SoCraTes_CA/" title="Our Twitter">
         <Icon name="ion:logo-twitter" />
       </a>
     </li>
   </Navigation>
+
+  <Modal triggerId="tickets-coming-soon" title="Tickets for the 2024 edition are not available yet" closeText="Close">
+    <p>
+      Registration for the 2024 edition of SoCraTes Canada is not available yet. We need to finalize the details first.
+    </p>
+    <p>
+      To stay tuned and be the first to know when tickets are available, follow us on <a
+        href="https://twitter.com/SoCraTes_CA/">Twitter</a
+      >, or join <a href="http://slack.softwarecraftsmanship.org/">our community (channel #socrates_ca)</a>.
+    </p>
+  </Modal>
 </header>
 
 <style lang="scss" is:global>

@@ -1,0 +1,90 @@
+---
+import { Accordion, AccordionItem } from 'accessible-astro-components'
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+---
+
+<DefaultLayout title="Frequently Asked Questions">
+  <section class="my-12" id="main-content">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="space-content mt-12 text-lg">
+        <p>
+          Here are some common questions you may have. We also have <a
+            href="https://github.com/socrates-ca/socrates-ca.github.io/wiki">a wiki</a
+          > you can explore.
+        </p>
+        <p>
+          If you still have any question, <a
+            href="mailto:nicolascarlo.espeon@gmail.com?subject=Question regarding SoCraTes CA"
+            >ping me (nicolascarlo.espeon@gmail.com)</a
+          >
+        </p>
+      </div>
+
+      <div class="space-content mt-12">
+        <Accordion>
+          <AccordionItem header="What to bring?">
+            <div class="space-content text-lg">
+              <p>Here's what you would need to bring:</p>
+              <ul class="list-inside list-disc">
+                <li>Your laptop</li>
+                <li>A notebook and a pen</li>
+                <li>Warm clothes (expect temperatures between 0°C and 15°C)</li>
+                <li>Cool clothes (if we are lucky, we may experience Indian Summer with temperatures up to 20°C)</li>
+              </ul>
+              <p>
+                The rest will be available on site. If you have any question, <a
+                  href="mailto:nicolascarlo.espeon@gmail.com?subject=Question regarding SoCraTes CA"
+                  >ping me (nicolascarlo.espeon@gmail.com)</a
+                >.
+              </p>
+            </div>
+          </AccordionItem>
+          <AccordionItem header="How to get there?">
+            <div class="space-content text-lg">
+              <p>The Selenia Lodge address is:</p>
+              <address>
+                <p>
+                  679 chemin de Rockway Valley Route 364<br />
+                  Amherst, QC J0T 2L0, Canada<br />
+                  Domaine de Kanata Tremblant
+                </p>
+              </address>
+              <p>It's a 1h45 car drive from Montréal, to the North, near Mont-Tremblant.</p>
+              <p>
+                We will facilitate <a href="https://github.com/socrates-ca/socrates-ca.github.io/wiki/CarSharing"
+                  >car sharing</a
+                > between participants.
+              </p>
+            </div>
+          </AccordionItem>
+          <AccordionItem header="Can your family join?">
+            <div class="space-content text-lg">
+              <p>
+                As a participant, you have an individual room. Each room includes a Queen bed. Therefore, if you want to
+                go with your loved one, it is totally possible. In fact, you can bring anyone, as long as you share the
+                bed.
+              </p>
+              <p>
+                They may or may not attend the unconference. If they don't, they can still enjoy the cabin and
+                surroundings for the weekend.
+              </p>
+              <p>
+                If they attend the lunches and dinner, there is an extra fee to cover for the catering (typically, half
+                the full-ticket price).
+              </p>
+              <p>
+                Thus, if you want to bring someone, please <a
+                  href="mailto:nicolascarlo.espeon@gmail.com?subject=Question regarding SoCraTes CA"
+                  >reach out to us (nicolascarlo.espeon@gmail.com)</a
+                >.
+              </p>
+            </div>
+          </AccordionItem>
+          <!-- TODO: question about tickets https://github.com/socrates-ca/socrates-ca.github.io/wiki#your-ticket-for-socrates-canada-includes -->
+        </Accordion>
+      </div>
+    </div>
+  </section>
+</DefaultLayout>
