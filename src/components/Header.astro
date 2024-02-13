@@ -7,17 +7,22 @@ import Navigation from '../components/Navigation.astro'
 <header>
   <SkipLinks />
   <Navigation>
-    <li class="menu-item">
-      <a href="/#about">About</a>
-    </li>
-    <li class="menu-item">
-      <a href="/#venue">Venue</a>
-    </li>
-    <li class="menu-item">
-      <a href="/#schedule">Schedule</a>
-    </li>
-    <li class="menu-item">
-      <a href="/#sponsors">Sponsors</a>
+    <li class="menu-item has-dropdown">
+      <button aria-haspopup="true" aria-expanded="false">Home</button>
+      <ul class="dropdown-menu">
+        <li class="submenu-item">
+          <a href="/#about">About</a>
+        </li>
+        <li class="submenu-item">
+          <a href="/#venue">Venue</a>
+        </li>
+        <li class="submenu-item">
+          <a href="/#schedule">Schedule</a>
+        </li>
+        <li class="submenu-item">
+          <a href="/#sponsors">Sponsors</a>
+        </li>
+      </ul>
     </li>
     <li class="menu-item">
       <a href="/faq">FAQ</a>
