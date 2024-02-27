@@ -1,6 +1,7 @@
 ---
 import { Media } from 'accessible-astro-components'
 import ContentMedia from '../components/ContentMedia.astro'
+import LinkedMedia from '../components/LinkedMedia.astro'
 import Counter from '../components/Counter.astro'
 import Feature from '../components/Feature.astro'
 import Hero from '../components/Hero.astro'
@@ -203,8 +204,26 @@ import DefaultLayout from '../layouts/DefaultLayout.astro'
                 target="_blank">it's up to you</a
               > to propose a session, or to join one.
             </p>
+            <ContentMedia imgSrc="/topic-cache.jpeg">
+              <p>That being said, here are some topics that were discussed during previous editions:</p>
+              <ul class="list-inside list-disc">
+                <li>Prioritize Tech Debt with git metadata</li>
+                <li>How to make the community more inclusive</li>
+                <li>Remote mob programming</li>
+                <li>How to discover what you don't know that you don't know</li>
+                <li>Getting started on DDD</li>
+                <li>Component design with tests</li>
+                <li>How to apply DDD to front-end development?</li>
+                <li>Code reviews assisted with AI: good or bad idea?</li>
+                <li>… and many more!</li>
+              </ul>
+              <p>
+                Besides regular roundtable discussions, we also had hands-on coding sessions (e.g. refactoring katas),
+                live animated workshops (e.g. Event Storming), and even TDD board game!
+              </p>
+            </ContentMedia>
             <p>
-              Facilitation will be in English. However, it will be possible to run sessions in other languages (eg.
+              Facilitation will be in English. However, it will be possible to run sessions in other languages (e.g.
               French).
             </p>
             <p>
@@ -347,6 +366,40 @@ import DefaultLayout from '../layouts/DefaultLayout.astro'
                 </tr>
               </tbody>
             </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-40">
+        <div class="container">
+          <h2 id="testimonials" class="text-6xl">Testimonials from previous editions</h2>
+          <div class="space-content mt-20 text-lg">
+            <p>Here are some feedbacks from the participants and sponsors of previous editions:</p>
+            <div class="grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-3 justify-center">
+              <LinkedMedia
+                href="https://www.linkedin.com/posts/abbeal_socrates-2023-activity-7125126418358784000-c_qo"
+                imgSrc={'/testimonial-abbeal.png'}
+              />
+                <LinkedMedia
+                href="https://www.linkedin.com/posts/sacha-brami-a4632370_je-reprends-peu-%C3%A0-peu-mes-esprits-apr%C3%A8s-activity-7120482959324782592-mHDS"
+                imgSrc={'/testimonial-sacha.png'}
+                className="lg:col-span-2"
+                />
+                <LinkedMedia
+                href="https://www.linkedin.com/posts/zenika-canada_de-retour-de-la-conf%C3%A9rence-socrates-canada-activity-7120438920076517378-4LWF"
+                imgSrc={'/testimonial-zenika.png'}
+                className="lg:row-span-2 lg:col-span-2"
+                />
+                <LinkedMedia
+                  href="https://www.linkedin.com/posts/mclement_socrates-ia-tdd-activity-7120525881005027328-EAcz"
+                  imgSrc={'/testimonial-mike.png'}
+                />
+                <LinkedMedia
+                  href="https://www.linkedin.com/posts/laetitia-constantin_socrates-ia-tdd-activity-7122944901272481794-gk4u"
+                  imgSrc={'/testimonial-laetitia.png'}
+                  className="md:col-span-2 lg:col-span-1"
+                />
+            </div>
           </div>
         </div>
       </section>

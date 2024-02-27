@@ -1,0 +1,20 @@
+---
+import { Media } from 'accessible-astro-components'
+
+const { imgSrc, href, className = '' } = Astro.props
+---
+
+<a href={href} target="_blank" rel="noopener noreferrer" class={`link-media rounded-xl ${className}`}>
+  <Media class="relative z-10 rounded-xl" src={imgSrc} />
+</a>
+
+<style lang="scss">
+  .link-media {
+    border: 2px solid var(--primary-200);
+
+    &:hover, &:focus {
+      opacity: 0.75;
+      border-color: var(--primary-300);
+    }
+  }
+</style>
