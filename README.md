@@ -15,7 +15,7 @@ Once you are ready, install dependencies with:
 
     npm ci
 
-> [!INFO]
+> [!NOTE]
 > The website is built with [Astro](https://astro.build/), based on the [Accessible Astro Starter](https://github.com/markteekman/accessible-astro-starter) template. The source code is in [TypeScript](https://www.typescriptlang.org/). It uses [Tailwind](https://tailwindcss.com/) for the design.
 
 ### Run the website locally
